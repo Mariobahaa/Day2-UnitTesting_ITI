@@ -1,12 +1,12 @@
-// const getPositive = (vals) => {
-//   return vals.filter((x) => {
-//     return x > 0;
-//   });
-// };
+const getPositive = (vals) => {
+  return vals.filter((x) => {
+    return x > 0;
+  });
+};
 
-// const incrementByOne = (count) => {
-//   count += 1;
-// },
+const incrementByOne = (count) => {
+  count += 1;
+};
 
 // vals array of numbers
 const sumFunction = (vals, getPositive, incrementByOne) => {

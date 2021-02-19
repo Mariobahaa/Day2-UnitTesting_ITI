@@ -17,7 +17,7 @@ describe("testing math utilities", () => {
   // at after all set all variables to 0
   beforeAll(()=>{
       pos_vals = [1,2,3,4];
-      neg_val = [-1,-2,-3,-4];
+      neg_vals = [-1,-2,-3,-4];
       vals = pos_vals.concat(neg_vals);
       sum_of_vals = vals.reduce((x, y) => x + y, 0);
       //console.log("before All");
@@ -27,7 +27,19 @@ describe("testing math utilities", () => {
       console.log(vals);
   });
 
+  afterEach(()=>{
+      console.log("Done");
+  });
+
+  afterAll(()=>{
+      pos_vals = 0;
+      neg_vals = 0;
+      vals = 0;
+      sum_of_vals = 0;
+  });
+
   test("sum function should equal to sum of the values", () => {});
 
   test("positive function should equal to positive values", () => {});
+
 });
